@@ -18,12 +18,12 @@ def getFrame():
 while (True):
     getFrame()
 
+    im1 = Image.open("output.png")
+    
     if (evenCapture is False):
-        im1 = Image.open("output.png")
         pixels1 = list(im1.getdata())
     elif (evenCapture is True):
-        im2 = Image.open("output.png")
-        pixels2 = list(im2.getdata())
+        pixels2 = list(im1.getdata())
     
     changedPixels= 0
     if (pixels1 is not None and pixels2 is not None): 
