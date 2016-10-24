@@ -6,7 +6,6 @@ from playsound import playsound
 from datetime import datetime
 from PIL import Image
 
-threshold = 10
 sensitivity = 60000
 evenCapture = False
 
