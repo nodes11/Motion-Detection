@@ -4,7 +4,6 @@ import time
 from datetime import datetime
 from PIL import Image
 
-threshold = 10
 sensitivity = 60000
 evenCapture = False
 
@@ -32,8 +31,7 @@ while (True):
                 changedPixels = changedPixels + 1
 
     	if (changedPixels > sensitivity):
-	    print("farting...")
-            subprocess.call(["aplay", "fart-1.wav"])    
+            subprocess.call(["aplay", "sound.wav"])    
 
     time.sleep(.5)
     evenCapture = not evenCapture
